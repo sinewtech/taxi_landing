@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Fullpage from "../Components/Fullpage";
 import Section from "../Components/Section";
 class DreamTeam extends Component {
@@ -24,22 +24,20 @@ class DreamTeam extends Component {
         ]}
       >
         <Section>
-          <h1>DreamTeam</h1>
-        </Section>
-        <Section>
-          <h1>CarlosV</h1>
-        </Section>
-        <Section>
-          <h1>PilarR</h1>
-        </Section>
-        <Section>
-          <h1>DavidM</h1>
-        </Section>
-        <Section>
-          <h1>DanielS</h1>
-        </Section>
-        <Section>
-          <h1>JosueR</h1>
+          <Container fluid>
+            <div style={{ position: "absolute", top: 0, padding: 5 }}>
+              <h1>DreamTeam</h1>
+            </div>
+            <Container>
+              <Row>
+                <Col style={{ backgroundColor: "red" }}>1</Col>
+                <Col style={{ backgroundColor: "blue" }}>2</Col>
+                <Col style={{ backgroundColor: "green" }}>3</Col>
+                <Col style={{ backgroundColor: "yellow" }}>4</Col>
+                <Col style={{ backgroundColor: "salmon" }}>5</Col>
+              </Row>
+            </Container>
+          </Container>
         </Section>
       </Fullpage>
     );

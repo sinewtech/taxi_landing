@@ -12,7 +12,8 @@ class Home extends Component {
         <Section>
           <Container className="masterContainer spotlightContainer" fluid>
             <div className="logoContainer">
-              <img src="/logo_arrivo.png" />
+              <img alt="logo_arrivo" src="/logo_arrivo.png" />
+              <h1 className="slogan">¿QUIERE TAXI PAPU?</h1>
             </div>
           </Container>
         </Section>

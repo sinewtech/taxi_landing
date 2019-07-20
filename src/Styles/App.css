@@ -5,7 +5,6 @@
 }
 
 .masterContainer {
-  --main-color: #ff9800;
   background-color: #ff9800;
   height: 100% !important;
   color: white;
@@ -35,6 +34,9 @@
 .logoContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
 }
 .logoContainer > img {
   height: 25%;
@@ -49,4 +51,11 @@
 
 .content {
   margin-top: 105px;
+}
+
+.slogan {
+  font-weight: bolder;
+  font-size: 256;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
