@@ -1,9 +1,19 @@
+.navbar {
+  background-color: #ff9800 !important;
+  box-shadow: 0 2px 5px #0004;
+  min-height: 60px;
+}
+
 .masterContainer {
+  --main-color: #ff9800;
   background-color: #ff9800;
   height: 100% !important;
   color: white;
 }
+
 .spotlightContainer {
+  background-color: white;
+  padding: 52px;
 }
 
 .clienteContainer {
@@ -16,4 +26,27 @@
 }
 
 .masterContainer {
+}
+
+#fp-nav ul li a span {
+  background: #000 !important;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+.logoContainer > img {
+  height: 25%;
+  width: 25%;
+}
+
+#navLogo {
+  height: 60px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.content {
+  margin-top: 105px;
 }
