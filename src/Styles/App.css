@@ -83,7 +83,8 @@
   padding: 25px;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("https://www.lifewire.com/thmb/Pfr8XIxLR_G8ZbonSRefcw1jzm8=/4948x2480/filters:fill(auto,1)/mapsdirectionspart1-56cd4d395f9b5879cc5bd51a.png");
-  background-size: contain;
+  /*background-size: contain;*/
+  animation: backgroundAnimation 20s infinite;
 }
 
 .centerText {
@@ -91,4 +92,14 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background-position: top left;
+  }
+
+  to {
+    background-position: bottom right;
+  }
 }
