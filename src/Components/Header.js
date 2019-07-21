@@ -8,18 +8,11 @@ import {
   NavItem
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-// import "./header.css";
-export default class Header extends React.Component {
+class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalsignup: false,
-      modallogin: false,
-      modalmessage: false,
-      isOpen: false,
-      user: false,
-      message: "",
-      title: ""
+      isOpen: false
     };
   }
   togglemenu = () => {
@@ -38,7 +31,9 @@ export default class Header extends React.Component {
       >
         <NavbarBrand style={{ color: "white", fontWeight: "bolder" }} href="/">
           <NavLink to="/">
-            <img id="navLogo" alt="Logo" src="/imagotipo.png" />
+            <div id="navLogoDiv">
+              <img id="navLogo" alt="Logo" src="/imagotipo.png" />
+            </div>
           </NavLink>
         </NavbarBrand>
         <NavbarToggler onClick={this.togglemenu} />
@@ -47,7 +42,19 @@ export default class Header extends React.Component {
             <NavItem>
               <NavLink
                 className="nav-link"
-                style={{ color: "white" }}
+                activeClassName="navLinkActive"
+                exact
+                to={{ pathname: "/", hash: "cliente" }}
+              >
+                Cliente
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="nav-link"
+                activeClassName="navLinkActive"
+                exact
+                style={{ color: "black" }}
                 to="/equipo"
               >
                 Equipo
@@ -59,3 +66,4 @@ export default class Header extends React.Component {
     );
   }
 }
+export default Header;
