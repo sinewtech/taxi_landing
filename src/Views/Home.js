@@ -29,7 +29,7 @@ class Home extends Component {
         </Section>
         <Section>
           <Container
-            style={{ backgroundColor: "red" }}
+            style={{ backgroundColor: "white" }}
             className="clienteContainer masterContainer"
             fluid
           >
@@ -37,7 +37,7 @@ class Home extends Component {
               <Col sm={8}>
                 <div className="centerText">
                   <Row style={{ padding: "10%" }}>
-                    <h1>Cliente hola mu wena</h1>
+                    <h1>Cliente</h1>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Maecenas maximus ipsum nec metus elementum congue. Cras
@@ -54,7 +54,6 @@ class Home extends Component {
                 sm={4}
                 style={{ textAlign: "center", display: "inline-block" }}
               >
-                <p>Quiere un pedacito de quesito</p>
                 <img
                   style={{ width: "15vw" }}
                   src="/phone_client.png"
@@ -68,15 +67,13 @@ class Home extends Component {
           <Container
             className="conductorContainer masterContainer"
             fluid
-            style={{ backgroundColor: "green" }}
+            style={{ backgroundColor: "white" }}
           >
             <Row>
               <Col
                 sm={4}
                 style={{ textAlign: "center", display: "inline-block" }}
               >
-                <h1>Conductor</h1>
-                <p>Hola mu wena, quiero queso</p>
                 <img
                   style={{ width: "15vw" }}
                   src="/phone_driver.png"
@@ -86,7 +83,7 @@ class Home extends Component {
               <Col sm={8}>
                 <div className="centerText">
                   <Row style={{ padding: "10%" }}>
-                    <h1>Conductor hola mu wena</h1>
+                    <h1>Conductor</h1>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Maecenas maximus ipsum nec metus elementum congue. Cras
