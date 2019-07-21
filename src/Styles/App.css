@@ -13,8 +13,9 @@
   color: black;
   padding: 5%;
 }
+
 .clienteContainer {
-  color: black;
+  color: black !important;
 }
 
 .conductorContainer {
@@ -32,7 +33,7 @@
 }
 
 #fp-nav ul li a span {
-  background: #000 !important;
+  background: #ff9800 !important;
 }
 
 .logoContainer {
@@ -41,15 +42,24 @@
   align-items: center;
   flex-direction: column;
   color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 55vw !important;
+  height: 50vh !important;
+  padding: 10px;
 }
-
+.Typist {
+  text-align: center;
+}
 .logoContainer > img {
-  height: 25%;
-  width: 25%;
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
 }
-
-.navbar-brand {
-  height: 200%;
+.centerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #navLogoDiv {
@@ -84,7 +94,7 @@
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("https://www.lifewire.com/thmb/Pfr8XIxLR_G8ZbonSRefcw1jzm8=/4948x2480/filters:fill(auto,1)/mapsdirectionspart1-56cd4d395f9b5879cc5bd51a.png");
   /*background-size: contain;*/
-  animation: backgroundAnimation 20s infinite;
+  animation: backgroundAnimation 20s linear infinite alternate;
 }
 
 .centerText {
@@ -92,8 +102,36 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #0002;
 }
 
+.creds {
+  z-index: 1000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  height: 50px;
+  width: 75px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease-in-out 150ms;
+  box-shadow: 0 0px 5px #0009;
+}
+.creds:hover {
+  height: 75px;
+  width: 100px;
+  padding: 12px;
+}
+.creds > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 @keyframes backgroundAnimation {
   from {
     background-position: top left;

@@ -42,6 +42,18 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className="nav-link"
+                isActive={() => window.location.hash === "#spotlight"}
+                activeClassName="navLinkActive"
+                exact
+                to={{ pathname: "/", hash: "spotlight" }}
+              >
+                Sistema
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="nav-link"
+                isActive={() => window.location.hash === "#cliente"}
                 activeClassName="navLinkActive"
                 exact
                 to={{ pathname: "/", hash: "cliente" }}
@@ -52,14 +64,36 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className="nav-link"
+                isActive={() => window.location.hash === "#conductor"}
+                activeClassName="navLinkActive"
+                exact
+                to={{ pathname: "/", hash: "conductor" }}
+              >
+                Conductor
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="nav-link"
+                isActive={() => window.location.hash === "#operador"}
+                activeClassName="navLinkActive"
+                exact
+                to={{ pathname: "/", hash: "operador" }}
+              >
+                Operador
+              </NavLink>
+            </NavItem>
+            {/* <NavItem>
+              <NavLink
+                className="nav-link"
                 activeClassName="navLinkActive"
                 exact
                 style={{ color: "black" }}
-                to="/equipo"
+                to={{ pathname: "/equipo", hash: "equipo" }}
               >
                 Equipo
               </NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>

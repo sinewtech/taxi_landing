@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Header />
+          <Header location={this.props.location} />
           <div className="content">
             <Switch>
               <Route path="/" component={Home} exact />
@@ -17,6 +17,14 @@ class App extends Component {
               {/* <Route component={Error404} /> */}
             </Switch>
           </div>
+          <a
+            href="https://sinewave.tech"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="creds"
+          >
+            <img src={"/SineCreds.png"} />
+          </a>
         </div>
       </BrowserRouter>
     );
